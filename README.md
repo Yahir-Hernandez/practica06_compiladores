@@ -1,8 +1,6 @@
 # Práctica 6: parser LALR(1) para asignaciones con apuntadores
 
-Motor (driver) de un parser LALR(1) escrito en C++17, que reutiliza la arquitectura de la práctica 5
-(pila de estados, tablas ACCION/IR_A, acciones semánticas y árbol de reducciones). Las tablas LALR(1)
-se calcularon a mano (ver `practica06.typ`) y están codificadas en `src/tabla_lalr.cpp`.
+Motor (driver) de un parser LALR(1) escrito en C++17.
 
 Gramática aumentada:
 
@@ -20,15 +18,15 @@ Gramática aumentada:
 Se requiere un compilador con C++17 (g++ o clang++) y `make`.
 
 ```bash
-make          # genera ./lalr
-make test     # ejecuta los 10 casos de tests/casos (5 válidos v*, 5 inválidos i*)
-make reporte  # compila practica06.pdf y ValidacionSaid.pdf (requiere typst)
-make clean    # borra build/, temp/, ./lalr y los PDF generados
+make          
+make test     # ejecuta los 10 casos de tests
+make reporte  
+make clean    
 ```
 
 ## Uso
 
-La entrada es una lista de tokens: `*`, `=` e `id`. Cualquier otro identificador (`p`, `ptr_1`) también
+La entrada es una lista de tokens: `*`, `=` e `id`. Cualquier otro identificador también
 es el token `id` y su nombre se conserva en el AST.
 
 ```bash
@@ -45,5 +43,4 @@ echo "* * p = * q" | ./lalr                    # lee la entrada estándar
 | `-r` | muestra el árbol de reducciones (la regla aplicada en cada nodo) |
 | `-h` | ayuda |
 
-Si la cadena es válida, el programa imprime `Resultado: ACEPTADA`, el estado final y el AST; si no,
-imprime `Resultado: RECHAZADA`, el estado en el que se detectó el error y la celda de ACCION vacía.
+
