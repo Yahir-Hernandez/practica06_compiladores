@@ -1,0 +1,4 @@
+Tokens: id id $
+
+Resultado: RECHAZADA (estado final 5)
+Error sintáctico en 1:4: no se esperaba 'id' (ACCION[5, id] está vacía). Se esperaba: =, $.

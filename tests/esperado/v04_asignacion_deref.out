@@ -1,0 +1,9 @@
+Tokens: * id = id $
+
+Resultado: ACEPTADA (estado final 1)
+
+AST:
+Asignación (=)
+├── Deref (*)
+│   └── id
+└── id

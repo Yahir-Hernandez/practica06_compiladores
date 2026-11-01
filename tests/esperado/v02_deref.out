@@ -1,0 +1,8 @@
+Tokens: * id $
+
+Resultado: ACEPTADA (estado final 1)
+
+AST:
+Expresión
+└── Deref (*)
+    └── id

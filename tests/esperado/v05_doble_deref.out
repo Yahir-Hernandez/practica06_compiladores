@@ -1,0 +1,11 @@
+Tokens: * * id p = * id q $
+
+Resultado: ACEPTADA (estado final 1)
+
+AST:
+Asignación (=)
+├── Deref (*)
+│   └── Deref (*)
+│       └── id p
+└── Deref (*)
+    └── id q

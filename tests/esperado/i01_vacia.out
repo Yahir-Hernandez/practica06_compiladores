@@ -1,0 +1,4 @@
+Tokens: $
+
+Resultado: RECHAZADA (estado final 0)
+Error sintáctico en 1:1: no se esperaba el fin de la entrada (ACCION[0, $] está vacía). Se esperaba: *, id.
